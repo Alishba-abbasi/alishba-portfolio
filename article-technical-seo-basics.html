@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical SEO Basics Explained | Alishba Marketing Lab</title>
+  <meta name="description" content="Understand crawlability, indexability, site speed, Core Web Vitals, sitemaps and robots.txt — the technical SEO basics every beginner should know." />
+  <meta name="author" content="Alishba Marketing Lab" />
+  <meta property="og:title" content="Technical SEO Basics Explained" />
+  <meta property="og:description" content="What technical SEO is and why Google cares about it." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-dot"></span>
+          Alishba Marketing Lab
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="marketing-lab.html">Marketing Lab</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <div class="article-hero-bg" style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(20,184,166,0.07), transparent 70%);"></div>
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>›</span><a href="blog.html">Blog</a><span>›</span><span style="color:var(--text-muted);">Technical SEO Basics</span>
+      </nav>
+      <a href="blog.html" class="back-to-blog">← Back to Blog</a>
+      <div class="article-hero-tag">Technical SEO</div>
+      <h1>Technical SEO Basics Explained</h1>
+      <div class="article-meta-bar">
+        <div class="article-meta-item"><span class="article-meta-icon">✍️</span><span>By <strong>Alishba Marketing Lab</strong></span></div>
+        <div class="article-meta-item"><span class="article-meta-icon">📅</span><span><strong>May 2026</strong></span></div>
+        <div class="article-meta-item"><span class="article-meta-icon">⏱️</span><span><strong>12 min</strong> read</span></div>
+        <div class="article-meta-item"><span class="article-meta-icon">📂</span><span>Technical SEO</span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="article-featured-img" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+      ⚙️
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="article-layout">
+
+      <aside class="toc" aria-label="Table of contents">
+        <div class="toc-title">Table of Contents</div>
+        <nav class="toc-list">
+          <a href="#what-is-technical-seo">What Is Technical SEO?</a>
+          <a href="#crawlability">Crawlability</a>
+          <a href="#indexability">Indexability</a>
+          <a href="#site-speed">Site Speed</a>
+          <a href="#core-web-vitals">Core Web Vitals</a>
+          <a href="#mobile-friendliness">Mobile-Friendliness</a>
+          <a href="#sitemaps-robots">Sitemaps &amp; Robots.txt</a>
+          <a href="#https">HTTPS Security</a>
+          <a href="#conclusion">Conclusion</a>
+        </nav>
+      </aside>
+
+      <article class="article-body-content">
+
+        <h2 id="what-is-technical-seo">What Is Technical SEO?</h2>
+        <p>Technical SEO refers to the behind-the-scenes optimizations that help search engines crawl, index, and understand your website properly. It is not about your content's writing quality — it is about whether Google can even access and process your content in the first place.</p>
+        <p>Even the best content in the world will not rank if technical issues are blocking Google from finding or indexing it. If you have not yet covered the basics, start with <a href="article-what-is-seo.html">What Is SEO? A Beginner's Complete Guide</a> for context on how crawling and indexing work.</p>
+
+        <h2 id="crawlability">Crawlability</h2>
+        <p>Crawlability refers to how easily Google's bots can navigate through your website. If important pages are buried deep within your site structure or blocked by broken links, crawlers may never reach them.</p>
+        <ul>
+          <li>Keep your site structure shallow — important pages should be reachable within 3 clicks from the homepage.</li>
+          <li>Fix broken internal links that lead crawlers to dead ends.</li>
+          <li>Use a logical internal linking strategy, similar to how this article links to <a href="article-on-page-seo-checklist.html">On-Page SEO Checklist</a> and other related guides.</li>
+        </ul>
+
+        <h2 id="indexability">Indexability</h2>
+        <p>Even if Google can crawl a page, that doesn't guarantee it gets indexed (added to Google's database). Pages can be excluded from the index due to "noindex" tags, duplicate content issues, or low-quality signals.</p>
+        <div class="callout">
+          <span class="callout-label">🔍 Quick Check</span>
+          <p>Use Google Search Console's URL Inspection tool to instantly check whether a specific page is indexed and request indexing if it's missing. This is one of the free tools covered in our <a href="article-best-free-seo-tools.html">Best Free SEO Tools guide</a>.</p>
+        </div>
+
+        <h2 id="site-speed">Site Speed</h2>
+        <p>Page speed is both a ranking factor and a major driver of user experience. Slow-loading pages frustrate visitors and increase bounce rate, which signals to Google that your page may not be a good result.</p>
+        <ul>
+          <li>Compress and resize images before uploading them.</li>
+          <li>Minimize unnecessary JavaScript and CSS files.</li>
+          <li>Use browser caching to speed up repeat visits.</li>
+          <li>Choose reliable, fast hosting.</li>
+        </ul>
+
+        <h2 id="core-web-vitals">Core Web Vitals</h2>
+        <p>Core Web Vitals are a specific set of metrics Google uses to measure real-world user experience on your page.</p>
+        <div class="checklist">
+          <div class="checklist-item"><span class="checklist-check">✓</span><span><strong>Largest Contentful Paint (LCP)</strong> — measures loading performance. Should occur within 2.5 seconds.</span></div>
+          <div class="checklist-item"><span class="checklist-check">✓</span><span><strong>Interaction to Next Paint (INP)</strong> — measures responsiveness to user interaction. Should be under 200ms.</span></div>
+          <div class="checklist-item"><span class="checklist-check">✓</span><span><strong>Cumulative Layout Shift (CLS)</strong> — measures visual stability. Should be under 0.1.</span></div>
+        </div>
+
+        <h2 id="mobile-friendliness">Mobile-Friendliness</h2>
+        <p>Google uses mobile-first indexing, meaning it primarily evaluates the mobile version of your website for ranking — even for desktop searches. A site that isn't fully responsive will struggle to rank regardless of how good the content is.</p>
+        <ul>
+          <li>Use responsive design that adapts to all screen sizes.</li>
+          <li>Make sure buttons and links are large enough to tap easily.</li>
+          <li>Avoid intrusive pop-ups that block content on mobile.</li>
+        </ul>
+
+        <h2 id="sitemaps-robots">Sitemaps &amp; Robots.txt</h2>
+        <p>An XML sitemap is a file that lists all the important pages on your website, helping Google discover and crawl them efficiently. A robots.txt file tells search engines which pages or sections they should or should not crawl.</p>
+        <div class="callout">
+          <span class="callout-label">⚙️ Setup Tip</span>
+          <p>Submit your XML sitemap directly through Google Search Console to speed up discovery of new pages — especially useful for newly launched websites.</p>
+        </div>
+
+        <h2 id="https">HTTPS Security</h2>
+        <p>HTTPS encrypts the connection between your website and visitors, protecting user data. It has been a confirmed Google ranking signal since 2014, and browsers now actively warn users when visiting non-HTTPS sites — which damages trust and increases bounce rate.</p>
+
+        <div class="article-conclusion">
+          <h2 id="conclusion">Conclusion</h2>
+          <p>Technical SEO might sound intimidating, but it comes down to one core idea: make sure search engines can easily access, understand, and trust your website. Start by checking your site in Google Search Console, fixing any indexing issues, and improving your page speed and mobile experience.</p>
+          <p style="margin-bottom:0;">Now that you understand the technical foundation, make sure you're not making any avoidable errors. Read <a href="article-common-seo-mistakes.html">Common SEO Mistakes Beginners Make</a> next.</p>
+        </div>
+
+        <nav class="article-nav" aria-label="Article navigation">
+          <a href="article-best-free-seo-tools.html" class="article-nav-btn">
+            <div class="article-nav-direction">← Previous</div>
+            <div class="article-nav-title">Best Free SEO Tools</div>
+          </a>
+          <a href="article-common-seo-mistakes.html" class="article-nav-btn next">
+            <div class="article-nav-direction">Next →</div>
+            <div class="article-nav-title">Common SEO Mistakes Beginners Make</div>
+          </a>
+        </nav>
+
+        <section class="related-articles" aria-label="Related articles">
+          <div class="related-articles-title">Related Articles</div>
+          <div class="grid-3">
+            <article class="article-card">
+              <div class="article-thumb" style="background:linear-gradient(135deg,#12100e,#2c1654,#1565C0);"><div class="article-thumb-inner">🛠️</div></div>
+              <div class="article-body">
+                <span class="article-tag">Tools</span>
+                <h3 class="article-title">Best Free SEO Tools</h3>
+                <p class="article-excerpt">Free tools to monitor and fix technical SEO issues.</p>
+                <div class="article-meta"><span class="article-date">May 2026</span><a href="article-best-free-seo-tools.html" class="article-link">Read →</a></div>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-thumb" style="background:linear-gradient(135deg,#200122,#6f0000,#a01010);"><div class="article-thumb-inner">⚠️</div></div>
+              <div class="article-body">
+                <span class="article-tag">SEO Basics</span>
+                <h3 class="article-title">Common SEO Mistakes Beginners Make</h3>
+                <p class="article-excerpt">Avoid the mistakes that quietly kill rankings.</p>
+                <div class="article-meta"><span class="article-date">April 2026</span><a href="article-common-seo-mistakes.html" class="article-link">Read →</a></div>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-thumb" style="background:linear-gradient(135deg,#0f2027,#1a472a,#145a32);"><div class="article-thumb-inner">📋</div></div>
+              <div class="article-body">
+                <span class="article-tag">On-Page SEO</span>
+                <h3 class="article-title">On-Page SEO Checklist for Every Page</h3>
+                <p class="article-excerpt">Pair technical fixes with strong on-page optimization.</p>
+                <div class="article-meta"><span class="article-date">June 2026</span><a href="article-on-page-seo-checklist.html" class="article-link">Read →</a></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="nav-logo-dot"></span> Alishba Marketing Lab</div>
+          <p class="footer-tagline">Learning. Testing. Growing.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="GitHub">⌥</a>
+            <a href="#" class="social-icon" aria-label="Instagram">◎</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="marketing-lab.html">Marketing Lab</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Articles</h4>
+          <nav class="footer-links">
+            <a href="article-what-is-seo.html">What Is SEO?</a>
+            <a href="article-keyword-research-guide.html">Keyword Research</a>
+            <a href="article-on-page-seo-checklist.html">On-Page SEO</a>
+            <a href="article-best-free-seo-tools.html">Free SEO Tools</a>
+            <a href="article-technical-seo-basics.html">Technical SEO</a>
+            <a href="article-common-seo-mistakes.html">SEO Mistakes</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Alishba Marketing Lab. All rights reserved.</p>
+        <p class="footer-love">Built with <span>♥</span> and curiosity</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const headings = document.querySelectorAll('.article-body-content h2, .article-body-content h3');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      headings.forEach(h => { if (window.scrollY >= h.offsetTop - 120) current = h.id; });
+      tocLinks.forEach(a => a.classList.toggle('toc-active', a.getAttribute('href') === '#' + current));
+    }, { passive: true });
+  </script>
+</body>
+</html>

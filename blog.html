@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – SEO Guides & Digital Marketing Articles | Alishba Marketing Lab</title>
+  <meta name="description" content="Practical SEO articles and digital marketing guides written from real learning experiences. Keyword research, on-page SEO, technical SEO and more." />
+  <meta name="author" content="Alishba" />
+  <meta property="og:title" content="Blog – SEO Guides | Alishba Marketing Lab" />
+  <meta property="og:description" content="Practical SEO articles written from real experiments and learning. No filler, just actionable insights." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-dot"></span>
+          Alishba Marketing Lab
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="marketing-lab.html">Marketing Lab</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <span class="section-label fade-in">Knowledge Base</span>
+      <div class="divider fade-in"></div>
+      <h1 class="fade-in">SEO &amp; Marketing Articles</h1>
+      <p class="fade-in fade-in-delay-1">Practical guides written from real learning experiences. No padding, no recycled advice — just what actually works.</p>
+    </div>
+  </header>
+
+  <!-- BLOG CONTENT -->
+  <section class="section" style="padding-top: 48px;" aria-label="Blog articles">
+    <div class="container">
+
+      <!-- Search Bar -->
+      <div class="blog-search fade-in" role="search">
+        <span class="blog-search-icon" aria-hidden="true">🔍</span>
+        <label for="blog-search-input" class="sr-only">Search articles</label>
+        <input
+          id="blog-search-input"
+          type="search"
+          placeholder="Search articles…"
+          aria-label="Search blog articles"
+        />
+      </div>
+
+      <!-- Tag Filters -->
+      <div class="blog-tags fade-in" role="list" aria-label="Filter by topic">
+        <button class="blog-tag active" data-filter="all" role="listitem">All</button>
+        <button class="blog-tag" data-filter="seo-basics" role="listitem">SEO Basics</button>
+        <button class="blog-tag" data-filter="keyword" role="listitem">Keyword Research</button>
+        <button class="blog-tag" data-filter="on-page" role="listitem">On-Page SEO</button>
+        <button class="blog-tag" data-filter="technical" role="listitem">Technical SEO</button>
+        <button class="blog-tag" data-filter="tools" role="listitem">Tools</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid-3" id="articles-grid">
+
+        <article class="article-card blog-article-card fade-in" data-category="seo-basics">
+          <div class="article-thumb" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+            <div class="article-thumb-inner" aria-hidden="true">🔍</div>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">SEO Basics</span>
+            <h2 class="article-title">What Is SEO? A Beginner's Complete Guide</h2>
+            <p class="article-excerpt">Search engine optimization demystified. How search engines work, why SEO matters, and how to start thinking like Google.</p>
+            <div class="article-meta">
+              <span class="article-date">June 2026 · 8 min read</span>
+              <a href="article-what-is-seo.html" class="article-link" aria-label="Read What Is SEO">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card blog-article-card fade-in fade-in-delay-1" data-category="keyword">
+          <div class="article-thumb" style="background: linear-gradient(135deg, #1a0533, #2d1b69, #11998e);">
+            <div class="article-thumb-inner" aria-hidden="true">🗝️</div>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Keyword Research</span>
+            <h2 class="article-title">Keyword Research Guide for Beginners</h2>
+            <p class="article-excerpt">How to find keywords people actually search for, understand intent, and prioritize what's actually worth targeting.</p>
+            <div class="article-meta">
+              <span class="article-date">June 2026 · 10 min read</span>
+              <a href="article-keyword-research-guide.html" class="article-link" aria-label="Read Keyword Research Guide">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card blog-article-card fade-in fade-in-delay-2" data-category="on-page">
+          <div class="article-thumb" style="background: linear-gradient(135deg, #0f2027, #1a472a, #145a32);">
+            <div class="article-thumb-inner" aria-hidden="true">📋</div>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">On-Page SEO</span>
+            <h2 class="article-title">On-Page SEO Checklist for Every Page</h2>
+            <p class="article-excerpt">A step-by-step checklist covering title tags, meta descriptions, headings, internal links, and everything in between.</p>
+            <div class="article-meta">
+              <span class="article-date">June 2026 · 7 min read</span>
+              <a href="article-on-page-seo-checklist.html" class="article-link" aria-label="Read On-Page SEO Checklist">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card blog-article-card fade-in" data-category="tools">
+          <div class="article-thumb" style="background: linear-gradient(135deg, #12100e, #2c1654, #1565C0);">
+            <div class="article-thumb-inner" aria-hidden="true">🛠️</div>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Tools</span>
+            <h2 class="article-title">Best Free SEO Tools in 2026</h2>
+            <p class="article-excerpt">A curated list of free SEO tools that actually deliver value — no paid upgrades needed to get meaningful results.</p>
+            <div class="article-meta">
+              <span class="article-date">May 2026 · 9 min read</span>
+              <a href="article-best-free-seo-tools.html" class="article-link" aria-label="Read Best Free SEO Tools">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card blog-article-card fade-in fade-in-delay-1" data-category="technical">
+          <div class="article-thumb" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+            <div class="article-thumb-inner" aria-hidden="true">⚙️</div>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Technical SEO</span>
+            <h2 class="article-title">Technical SEO Basics Explained</h2>
+            <p class="article-excerpt">Crawlability, indexability, site speed, Core Web Vitals, sitemaps, robots.txt — what they are and why Google cares.</p>
+            <div class="article-meta">
+              <span class="article-date">May 2026 · 12 min read</span>
+              <a href="article-technical-seo-basics.html" class="article-link" aria-label="Read Technical SEO Basics">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card blog-article-card fade-in fade-in-delay-2" data-category="seo-basics">
+          <div class="article-thumb" style="background: linear-gradient(135deg, #200122, #6f0000, #a01010);">
+            <div class="article-thumb-inner" aria-hidden="true">⚠️</div>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">SEO Basics</span>
+            <h2 class="article-title">Common SEO Mistakes Beginners Make</h2>
+            <p class="article-excerpt">The mistakes I made — and see everywhere — that quietly kill rankings. Knowing what not to do is half the battle.</p>
+            <div class="article-meta">
+              <span class="article-date">April 2026 · 8 min read</span>
+              <a href="article-common-seo-mistakes.html" class="article-link" aria-label="Read Common SEO Mistakes">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Newsletter Callout -->
+      <div class="card fade-in" style="margin-top: 80px; text-align:center; padding: 56px 40px; background: linear-gradient(135deg, rgba(20,184,166,0.07), rgba(20,184,166,0.02));">
+        <span class="section-label" style="display:block; text-align:center; margin-bottom:12px;">Stay Updated</span>
+        <h2 style="margin-bottom:12px;">New Articles, Straight to You</h2>
+        <p style="max-width:440px; margin: 0 auto 28px;">When I publish a new experiment result or article, you'll be the first to know. No spam — just real SEO insights.</p>
+        <a href="contact.html" class="btn btn-primary">Follow the Journey →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="nav-logo-dot"></span> Alishba Marketing Lab</div>
+          <p class="footer-tagline">Learning. Testing. Growing.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="GitHub">⌥</a>
+            <a href="#" class="social-icon" aria-label="Instagram">◎</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="marketing-lab.html">Marketing Lab</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <nav class="footer-links">
+            <a href="blog.html">SEO Fundamentals</a>
+            <a href="blog.html">Keyword Research</a>
+            <a href="blog.html">Technical SEO</a>
+            <a href="blog.html">Content Strategy</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Alishba Marketing Lab. All rights reserved.</p>
+        <p class="footer-love">Built with <span>♥</span> and curiosity</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
