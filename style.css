@@ -1091,12 +1091,21 @@ p { color: var(--text-muted); font-weight: 400; }
   position: relative;
 }
 
-.avatar-ring {
+/* .avatar-ring {
   width: 260px; height: 260px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   padding: 3px;
   margin: 0 auto;
+} */
+
+.avatar-ring {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 2px;
+  background: rgba(255,255,255,0.15);
 }
 
 .avatar-inner {
@@ -1108,6 +1117,14 @@ p { color: var(--text-muted); font-weight: 400; }
   align-items: center;
   justify-content: center;
   font-size: 5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .about-tags {
