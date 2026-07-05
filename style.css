@@ -1119,14 +1119,6 @@ p { color: var(--text-muted); font-weight: 400; }
   font-size: 5rem;
 }
 
-.profile-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-}
-
 .about-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1143,6 +1135,14 @@ p { color: var(--text-muted); font-weight: 400; }
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-muted);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ===========================
@@ -1861,3 +1861,162 @@ p { color: var(--text-muted); font-weight: 400; }
   .article-featured-img { font-size: 2.5rem; margin-bottom: 40px; }
 }
 
+/* ===========================
+   ARTICLE CARD BANNER IMAGES
+   (Professional illustrated banners
+   replacing emoji-icon thumbnails)
+=========================== */
+
+.card-banner {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-banner svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,14,24,0.55) 0%, rgba(10,14,24,0.05) 45%, transparent 70%);
+  pointer-events: none;
+}
+
+.article-card:hover .card-banner svg {
+  transform: scale(1.04);
+}
+
+.card-banner svg {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Featured image now hosts full SVG illustration */
+.article-featured-img svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.article-featured-img {
+  font-size: 0;
+}
+
+/* ===========================
+   ARTICLE COVER BANNERS
+   Premium illustrated photography-style images
+=========================== */
+
+.cover-banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-banner svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Subtle dark overlay on all banners for text legibility consistency */
+.cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(15,23,42,0.25) 100%);
+  pointer-events: none;
+}
+
+/* ===========================
+   ARTICLE IMAGE SYSTEM
+   Clean img-based cards
+=========================== */
+
+/* ---- Blog card image wrapper ---- */
+.article-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background: #0d1828;
+  display: block;
+  flex-shrink: 0;
+}
+
+.article-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article-card:hover .article-image {
+  transform: scale(1.04);
+}
+
+/* ---- Article page hero featured image ---- */
+.article-featured-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 64px;
+  border: 1px solid var(--border);
+  background: #0d1828;
+}
+
+.article-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article-featured-img:hover .article-hero-image {
+  transform: scale(1.02);
+}
+
+/* ---- Related article card images ---- */
+.article-card .article-img-wrap .article-image {
+  height: 200px;
+}
+
+/* Remove old thumb styles that used emoji/SVG */
+.article-thumb {
+  display: none !important; /* hide any legacy .article-thumb not yet converted */
+}
+
+/* Override: if article-img-wrap is present, that IS the new thumb */
+.article-card .article-img-wrap {
+  display: block !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .article-image {
+    height: 185px;
+  }
+  .article-hero-image {
+    max-height: 300px;
+  }
+  .article-featured-img {
+    margin-bottom: 40px;
+    border-radius: var(--radius);
+  }
+}
+
+@media (max-width: 480px) {
+  .article-image {
+    height: 165px;
+  }
+}
